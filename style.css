@@ -1,75 +1,59 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
 }
 
-header {
-  width: 100%;
-  background-color: #e0e0e0;
-  padding: 1.5rem 1rem;
-  text-align: center;
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.2rem;
+img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 12px;
 }
 
-nav {
-  margin-top: 1rem;
+.buttons {
+  margin-bottom: 30px;
 }
 
-nav a {
-  margin: 0 1rem;
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  max-width: 700px;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.cta-button {
-  margin-top: 2rem;
-  background-color: #444;
-  color: white;
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin: 0 10px;
   border: none;
-  padding: 0.8rem 1.6rem;
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 8px;
   cursor: pointer;
+}
+
+.yes {
+  background-color: #4CAF50;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+
+.no {
+  background-color: #F44336;
+  color: white;
+}
+
+/* About page tweaks */
+.about-page {
+  justify-content: center;
+}
+
+.about-page a {
+  margin-top: 20px;
   text-decoration: none;
-}
-
-.cta-button:hover {
-  background-color: #222;
-}
-
-footer {
-  margin-top: 3rem;
-  padding: 1rem;
-  text-align: center;
-  color: #777;
-}
-
-.socials a {
-  color: #555;
-  margin: 0 0.5rem;
-  font-size: 1.2rem;
-}
-
-.socials a:hover {
-  color: #000;
+  color: blue;
 }
