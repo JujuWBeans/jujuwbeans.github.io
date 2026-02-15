@@ -12,17 +12,21 @@
   </div>
 
   <div class="buttons">
-    <button class="yes" onclick="yesClicked()">Yes</button>
+    <button id="yesBtn" class="yes" onclick="yesClicked()">Yes</button>
     <button class="no" onclick="noClicked()">No</button>
   </div>
 
   <script>
+    let scale = 1;
+
     function yesClicked() {
       window.location.href = "about.html";
     }
 
     function noClicked() {
-      alert("You clicked NO ❌");
+      scale += 0.2; // how much bigger YES gets
+      document.getElementById("yesBtn").style.transform =
+        `scale(${scale})`;
     }
   </script>
 
